@@ -1,0 +1,59 @@
+## Comandos Shell
+https://training.github.com/downloads/es_ES/github-git-cheat-sheet
+
+1) $ pwd
+/home/apacheco
+
+ls tips: https://opensource.com/article/18/10/ls-command 
+2) $ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+
+3) Recursive $ ls -R
+./Documents:
+c++
+./Documents/c++:
+hello  PacketG
+
+4) All attributes $ ls -al Documents/c++
+total 16
+drwxrwxr-x 4 apacheco apacheco 4096 Dec  6 23:28 .
+drwxr-xr-x 3 apacheco apacheco 4096 Dec  6 18:22 ..
+drwxrwxr-x 2 apacheco apacheco 4096 Dec  6 23:29 hello
+drwxrwxr-x 2 apacheco apacheco 4096 Dec  6 23:30 PacketG
+
+5) Sorted by size: $ ls -lS
+total 36
+drwxrwxr-x 5 apacheco apacheco 4096 Dec 11 11:28 Arduino
+drwxr-xr-x 2 apacheco apacheco 4096 Dec 11 11:23 Desktop
+drwxr-xr-x 2 apacheco apacheco 4096 Dec 11 10:51 Documents
+drwxr-xr-x 3 apacheco apacheco 4096 Dec 13 23:21 Downloads
+
+6) $ df
+Filesystem                        1K-blocks    Used Available Use% Mounted on
+udev                                 948248       0    948248   0% /dev
+tmpfs                                202436    1692    200744   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv  18959024 7922384  10050528  45% /
+
+7) One-liner disk space $ df -k /
+Filesystem                        1K-blocks     Used Available Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  29276164 13561860  14309104  49% /
+
+8) $ nslookup amazon.com
+Name:	amazon.com
+Address: 205.251.242.103
+Name:	amazon.com
+Address: 54.239.28.85
+Name:	amazon.com
+Address: 176.32.103.205
+
+9) $ ping amazon.com
+
+10) $ history
+Show shell last commands
+
+11) $ history | grep python
+Find “python” shell activity
+
+12) $ more readme | grep python
+
+13) $ man netstat
